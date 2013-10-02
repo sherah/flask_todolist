@@ -8,11 +8,9 @@
             This is unadorned text
         </p>
 
-        <ol>
-            {% for task in Task %}
-            <li>{{task.title}}</li>
-            <li>{{task.notes}}</li>
-            {% endfor %}
-        </ol>
+        {% for task in tasks %}
+          <li>{{task.title}}</li>
+          <li>{{task.notes}}</li>
+        {% endfor %}
     </body>
 </html>
