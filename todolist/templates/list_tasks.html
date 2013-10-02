@@ -1,16 +1,12 @@
 <html>
     <body>
-        <h1>This is a header</h1>
-        <h2>this is a smaller header</h2>
-        <p>
-            <b>this is bold text</b>
-            <i>this is italic text</i>
-            This is unadorned text
-        </p>
+        <h1>To-Do:</h1>
+        <h2>Get it done.</h2>
 
-        {% for task in tasks %}
-          <li>{{task.title}}</li>
-          <li>{{task.notes}}</li>
-        {% endfor %}
+        <ol>
+            {% for task in tasks %}
+            <li><b>{{task.title}}</b> {{task.notes}}</li>
+            {% endfor %}
+        </ol>
     </body>
 </html>
